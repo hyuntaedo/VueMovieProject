@@ -1,7 +1,7 @@
 <template>
-<Headline />
-<Search />
-<MovieList />
+  <Headline />
+  <Search />
+  <MovieList />
 </template>
 
 <script>

@@ -1,33 +1,35 @@
 <template>
-	<div class="container">
-		<input 
-		v-model="title"
-		class="form-control"
-		type="text"
-		placeholder="Search for Movies, Series & more"
-		@keyup.enter="apply" />
-		<div class="selects">
-			<select
-			v-model="$data[filter.name]"
-			v-for="filter in filters"
-			:key="filter.name"
-			class="form-select">
-			<option
-			v-if="filter.name == 'year'"
-			value="">
-				All Years
-			</option>
-			<option
-			v-for="item in filter.items"
-			:key="item">
-			{{ item }}
-			</option>
-			</select>
-		</div>
-		<button class="btn btn-primary" @click="apply">
-			Apple
-		</button>
-	</div>
+  <div class="container">
+    <input 
+      v-model="title"
+      class="form-control"
+      type="text"
+      placeholder="Search for Movies, Series & more"
+      @keyup.enter="apply" />
+    <div class="selects">
+      <select
+        v-model="$data[filter.name]"
+        v-for="filter in filters"
+        :key="filter.name"
+        class="form-select">
+        <option
+          v-if="filter.name == 'year'"
+          value="">
+          All Years
+        </option>
+        <option
+          v-for="item in filter.items"
+          :key="item">
+          {{ item }}
+        </option>
+      </select>
+    </div>
+    <button
+      class="btn btn-primary"
+      @click="apply">
+      Apple
+    </button>
+  </div>
 </template>
 
 <script>

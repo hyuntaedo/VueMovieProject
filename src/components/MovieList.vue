@@ -1,12 +1,12 @@
 <template>
-	<div class="container">
-		<div class="inner">
-		<MovieItem 
-		v-for="movie in movies"
-		:key="movie.idmbID"
-		:movie="movie" />
-		</div>	
-	</div>	
+  <div class="container">
+    <div class="inner">
+      <MovieItem 
+        v-for="movie in movies"
+        :key="movie.idmbID"
+        :movie="movie" />
+    </div>	
+  </div>	
 </template>
 
 <script>
