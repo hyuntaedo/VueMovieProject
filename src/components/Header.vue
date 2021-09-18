@@ -24,17 +24,18 @@ export default {
 		return {
 			navigations: [
 				{
-					name: 'Search',
-					href: '/'
+					name:'Search',
+					href:'/'
+				},
+				{
+					name:'Movie',
+					href:'/movie/tt4520988'
 				},
 				{
 					name:'About',
 					href:'/about'
-				},
-				{
-					name:'Movie',
-					href:'/movie'
-				},
+				}
+				
 			]
 		}
 	},

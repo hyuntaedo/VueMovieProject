@@ -1,7 +1,7 @@
 import {createRouter, createWebHashHistory} from 'vue-router'
 import Home from './Home'
-import About from './About'
 import Movie from './Movie'
+import About from './About'
 
 
 export default createRouter({
@@ -15,13 +15,14 @@ export default createRouter({
 			component: Home
 		},
 		{
+			path:'/movie/:id',
+			component: Movie
+		},
+		{
 			path:'/about',
 			component: About
 		},
-		{
-			path:'/movie',
-			component: Movie
-		}
+		
 		
 	]
 })
